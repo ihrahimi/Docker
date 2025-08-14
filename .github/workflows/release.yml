@@ -14,19 +14,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # This is where we changed from npm ci to npm install
       - name: Install Dependencies
-        run: |
-          npm install
-          git add package-lock.json
-          git commit -m "chore: add package-lock.json" || echo "No changes to commit"
-          
+        run: npm install
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.Docker_Repo_Token }}
