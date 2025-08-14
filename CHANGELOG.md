@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ihrahimi/Docker/compare/v1.1.0...v1.1.1) (2025-08-14)
+
+
+### Bug Fixes
+
+* fix gitignore ([09dd63f](https://github.com/ihrahimi/Docker/commit/09dd63fbbe9656fd4a1ba48b033bde97d49e4213))
+
 # [1.1.0](https://github.com/ihrahimi/Docker/compare/v1.0.0...v1.1.0) (2025-08-14)
 
 
