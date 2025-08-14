@@ -1,4 +1,4 @@
-name: Semantic Release
+name: Release
 
 on:
   push:
@@ -7,26 +7,21 @@ on:
 
 jobs:
   release:
+    name: Semantic Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          path: './'
-          
-      - name: Verify Files
-        run: ls -la
+        uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install Dependencies
-        working-directory: '../../package.json'  # Explicit working directory
-        run: npm install
+        run: npm ci
 
-      - name: Release
+      - name: Run Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.Docker_Repo_Token }}
+          GH_TOKEN: ${{ secrets.Docker_Repo_Token }}
         run: npx semantic-release
