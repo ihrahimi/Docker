@@ -9,7 +9,7 @@ A lightweight Ubuntu-based Docker image with essential network troubleshooting t
   - `ping` (iputils-ping)
   - `ip` command (iproute2)
   - `traceroute` (inetutils-traceroute)
-- Optimized image size through proper cleanup
+- Optimized image size through proper cleanup 
 - Defaults to interactive bash shell
 
 ## Image Details
