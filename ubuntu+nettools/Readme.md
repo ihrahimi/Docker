@@ -13,7 +13,7 @@ A lightweight Ubuntu-based Docker image with essential network troubleshooting t
 - Defaults to interactive bash shell
 
 ## Image Details
-
+ 
 ```dockerfile
 FROM ubuntu:latest
 RUN apt update && \
