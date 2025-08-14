@@ -23,7 +23,7 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        working-directory: './'  # Explicit working directory
+        working-directory: '../../package.json'  # Explicit working directory
         run: npm install
 
       - name: Release
