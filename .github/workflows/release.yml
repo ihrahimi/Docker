@@ -23,5 +23,5 @@ jobs:
 
       - name: Run Semantic Release
         env:
-          GH_TOKEN: ${{ secrets.Docker_Repo_Token }}
+          Docker_Repo_Token: ${{ secrets.Docker_Repo_Token }}
         run: npx semantic-release
