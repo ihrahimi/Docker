@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ihrahimi/Docker/compare/v1.0.0...v1.1.0) (2025-08-14)
+
+
+### Features
+
+* add gitignore ([6656d9d](https://github.com/ihrahimi/Docker/commit/6656d9de0baddedcdc0086e6c11d490d4a788aa9))
+
 # 1.0.0 (2025-08-14)
 
 
